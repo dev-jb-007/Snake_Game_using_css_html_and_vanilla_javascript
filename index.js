@@ -51,6 +51,7 @@ function rungame() {
     if (isCollide() == true) {
         gameovermusic.play();
         alert("Your game is over");
+        speed=10;
         score = 0;
         score_and_highscore();
         direction = { x: 0, y: 0 };
@@ -83,7 +84,7 @@ function rungame() {
         let a = snakearr[0].x + direction.x;
         let b = snakearr[0].y + direction.y;
         snakearr.unshift({ x: a, y: b });
-        food = { x: (Math.round(1 + (17) * Math.random())), y: (Math.round(1 + (17) * Math.random())) };
+        food = { x: (Math.round(2 + (16) * Math.random())), y: (Math.round(2 + (16) * Math.random())) };
         score++;
         speed++;
         score_and_highscore();

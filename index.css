@@ -32,6 +32,8 @@
 }
 .food{
     background-color:red;
+    border-radius: 12px;
+    border:1px solid black;
 }
 .test{
     height:10px;
